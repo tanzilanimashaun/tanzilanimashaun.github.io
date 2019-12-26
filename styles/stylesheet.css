@@ -255,7 +255,7 @@ header {
 .nav-container {
     margin-top: 2rem;
     margin-right: 1rem;
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     font-weight: 400;
     color: white;
 }
@@ -279,11 +279,12 @@ header {
     border-radius: 40%;
     font-size: 1.25rem;
     font-weight: 600;
+    transition: 1s;
 }
 
 .logo:hover {
     box-shadow: 0 0 4px 2px;
-    transition: 0.15s linear;
+    transition: 0.15s ease-out;
 }
 .logo-t-container {
     margin-left: .25rem;
