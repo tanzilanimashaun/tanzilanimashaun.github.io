@@ -246,6 +246,11 @@ header {
 
 }
 
+section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
 .main-nav-container {
     background-color: #ff4136;
     padding-top: .5rem;
