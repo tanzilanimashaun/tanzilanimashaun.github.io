@@ -281,7 +281,7 @@ section {
 }
 
 .logo {
-    margin: 1rem;
+    margin: .25rem;
     margin-left: 2rem;
     padding: 1rem;
     background-color: #e7040f;
@@ -377,6 +377,29 @@ section {
     padding: 0.25rem;
     border: 1px dotted white;
     overflow: visible;
+}
+.accounts-container {
+    height: 40px;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+}
+.accounts {
+    width: 1.5rem;
+    display: inline-block;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    color: #ff4136;
+    transition: color 0.5s;
+}
+
+.accounts:hover {
+    color: #e7040f;
+}
+.codewars-container {
+    width: 3rem;
+}
+.accounts-container div a img {
+    width: 8rem;
 }
 
 
