@@ -34,13 +34,11 @@
 	</div>
 	<main class="w-100">
 		<section class="w-100">
-				<div class="about-me-container">
-					<h1>About Me</h1>
-					<img src="/images/profilePicture.jpg" class="profile-picture">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae turpis nec orci placerat semper. Proin congue, urna euismod dapibus sodales, erat purus bibendum velit, vel vulputate enim orci non metus. Nullam pharetra, lectus a pulvinar fermentum, lacus felis lacinia mi, vel auctor enim dolor vel nulla. Aenean mattis accumsan aliquet. Vivamus eget tellus massa. Mauris efficitur dolor sem, in mattis dui sodales quis. Nunc consequat, mauris in dignissim placerat, ipsum orci tincidunt urna, ac ornare lorem justo vitae nisl. Maecenas viverra ipsum id mauris ultrices, at dignissim lorem malesuada. Integer molestie aliquet quam, non tristique purus congue id. Aenean scelerisque lorem ultricies quam feugiat, a dictum est ullamcorper.</p>
-					<p>Aenean at imperdiet est. Pellentesque vel odio eros. Donec tempus laoreet egestas. Praesent placerat lacus sed erat consectetur, eget tincidunt ipsum aliquet. Cras ut enim id nibh pretium convallis in et nulla. Suspendisse varius enim semper neque malesuada molestie. Aenean egestas aliquet lacus, vel blandit arcu ornare gravida. Vestibulum eu gravida nibh. Sed accumsan aliquet purus, quis laoreet risus finibus eget. Vestibulum vel porta ex. Praesent tempor, nibh ut ullamcorper vehicula, sapien sem aliquam dui, a sagittis lacus nisl et orci.</p>
-					<p>Morbi id dui egestas sem luctus cursus. In fringilla bibendum diam eu tincidunt. Vestibulum hendrerit enim eu nunc laoreet, et malesuada libero finibus. Donec nisi turpis, scelerisque nec sapien vitae, posuere aliquam orci. Etiam ullamcorper nisi ac tortor venenatis, non scelerisque ipsum dignissim. Pellentesque varius vestibulum fermentum. Curabitur sem tellus, pellentesque sit amet elit eu, tempor sodales ipsum.</p>
-				</div>
+			<h1>About Me</h1>
+			<img src="/images/profilePicture.jpg" class="profile-picture">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae turpis nec orci placerat semper. Proin congue, urna euismod dapibus sodales, erat purus bibendum velit, vel vulputate enim orci non metus. Nullam pharetra, lectus a pulvinar fermentum, lacus felis lacinia mi, vel auctor enim dolor vel nulla. Aenean mattis accumsan aliquet. Vivamus eget tellus massa. Mauris efficitur dolor sem, in mattis dui sodales quis. Nunc consequat, mauris in dignissim placerat, ipsum orci tincidunt urna, ac ornare lorem justo vitae nisl. Maecenas viverra ipsum id mauris ultrices, at dignissim lorem malesuada. Integer molestie aliquet quam, non tristique purus congue id. Aenean scelerisque lorem ultricies quam feugiat, a dictum est ullamcorper.</p>
+			<p>Aenean at imperdiet est. Pellentesque vel odio eros. Donec tempus laoreet egestas. Praesent placerat lacus sed erat consectetur, eget tincidunt ipsum aliquet. Cras ut enim id nibh pretium convallis in et nulla. Suspendisse varius enim semper neque malesuada molestie. Aenean egestas aliquet lacus, vel blandit arcu ornare gravida. Vestibulum eu gravida nibh. Sed accumsan aliquet purus, quis laoreet risus finibus eget. Vestibulum vel porta ex. Praesent tempor, nibh ut ullamcorper vehicula, sapien sem aliquam dui, a sagittis lacus nisl et orci.</p>
+			<p>Morbi id dui egestas sem luctus cursus. In fringilla bibendum diam eu tincidunt. Vestibulum hendrerit enim eu nunc laoreet, et malesuada libero finibus. Donec nisi turpis, scelerisque nec sapien vitae, posuere aliquam orci. Etiam ullamcorper nisi ac tortor venenatis, non scelerisque ipsum dignissim. Pellentesque varius vestibulum fermentum. Curabitur sem tellus, pellentesque sit amet elit eu, tempor sodales ipsum.</p>
 		</section>
 		<hr>
 		<hr>
@@ -80,12 +78,12 @@
 		</div>
 		<hr>
 		<hr>
-		<section>
+		<section class="w-100">
 					<div>
 						<h1>Contact</h1>
 					</div>
 
-						<div>
+						<div class="w-100 flex justify-around">
 							<div>
 								<p>Tanzil Animashaun<div>Trainee Web-developer</div></p>
 								<em>
@@ -97,17 +95,16 @@
 									<div>Email: <a href="mailto:tanzil.animashaun@gmail.com" target="_blank">tanzil.animashaun@gmail.com</a></div>
 								</p>
 							</div>
-							<div>
-								<form action="" method="POST">
-									<input type="text" name="name" placeholder="Full name" required>
-									<input type="text" name="mail" placeholder="E-mail" required>
-									<input type="text" name="subject" placeholder="Subject">
-									<textarea name="message" placeholder="Message"></textarea>
-									<input type="submit" name="submit">
+							<div class="w-40">
+								<form action="" method="POST" class="contact-form">
+									<input class="w-100" type="text" name="name" placeholder="Full name" required><br>
+									<input class="w-100" type="text" name="mail" placeholder="E-mail" required><br>
+									<input class="w-100" type="text" name="subject" placeholder="Subject"><br>
+									<textarea class="w-100" name="message" placeholder="Message"></textarea><br>
+									<input class="w-20 m-auto"type="submit" name="submit">
 								</form>
 							</div>
 						</div>
-				</div>
 			</section>
 	</main>
 </body>
