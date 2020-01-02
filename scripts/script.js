@@ -1,5 +1,4 @@
-
-        window.onscroll = function() {myFunction()};
+window.onscroll = function() {myFunction()};
 
         var header = document.getElementById("mainNav");
         var accounts = document.getElementById("accountNav"); 
@@ -71,6 +70,13 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+const keyToggle = () => {
+    document.addEventListener('keydown', (e) => {
+    if (e.code === "ArrowLeft")  {plusSlides(-1)}
+  else if (e.code === "ArrowRight") {plusSlides(1)}
+})}
+
+keyToggle();
 
 function showSlides(n) {
   var i;
