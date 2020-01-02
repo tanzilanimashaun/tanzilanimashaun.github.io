@@ -1,4 +1,7 @@
-window.onscroll = function() {myFunction()};
+function desktop(x) {
+    if (x.matches) {
+        
+        window.onscroll = function() {myFunction()};
 
         var header = document.getElementById("mainNav");
         var accounts = document.getElementById("accountNav"); 
@@ -13,6 +16,21 @@ window.onscroll = function() {myFunction()};
                 accounts.classList.remove("hide-nav");
             }
         }
+    }
+
+    else {
+        window.onscroll = function() {noFade()};
+        var header = document.getElementById("mainNav");
+        function noFade () {
+            header.classList.remove("sticky");
+            }
+    }
+}
+
+var x = window.matchMedia("(min-width: 770px)");
+desktop(x);
+x.addListener(desktop);
+
 
 const navDrop = () => {
     const burger = document.querySelector('.burger');

@@ -629,6 +629,9 @@ section {
         margin: auto;
         z-index: 100
     }
+    .background-ns {
+        padding-top: 111px;
+    }
     .burger {
         display: block;
     }
@@ -650,6 +653,8 @@ section {
     }
     section { 
         padding: 1rem;
+        padding-top: 111px;
+        padding-bottom: 111px;
     }
     .slideshow-container-ns {
         border-style: none;
