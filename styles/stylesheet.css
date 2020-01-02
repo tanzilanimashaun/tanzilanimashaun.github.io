@@ -10,7 +10,8 @@ html {
 }
 
 body {
-    margin: 0
+    margin: 0;
+    overflow-x: hidden;
 }
 
 img {
@@ -443,6 +444,90 @@ section {
     margin: 6px;
 }
 
+
+.mySlides {
+    display: none;
+    margin: 2rem;
+}
+
+.slideshow-container {
+  width: 100%;
+  height: 400px;
+  background-color: #ff4136;
+  position: relative;
+  margin-top: 2rem;
+  border-radius: 40%;
+  box-shadow: 0 0 20px 10px #e7040f;
+}
+
+.prev, .next, .pause {
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev {
+    left: 0;
+    top: 50%;
+}
+.next {
+  right: 0;
+  top: 50%;
+  border-radius: 3px 0 0 3px;
+}
+.pause {
+    bottom: 0;
+    border-radius: 3px 3px 0 0;
+}
+
+.prev:hover, .next:hover, .pause:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next {font-size: 11px}
+}
+
 @media screen and (max-width: 770px) {
     .w-5-ns {
         width: 5%;
@@ -532,6 +617,9 @@ section {
     .items-center-ns {
         align-items: center;
     }
+    h1 {
+        font-size: 1.2rem;
+    }
     .sticky-ns {
         position: fixed;
         top: 0;
@@ -551,14 +639,25 @@ section {
         margin: 0;
         right: 0;
         left: 0;
-
+        height: 80vh;
+        width: 100vw;
         top: 109px;
         align-items: center;
         justify-content: space-around;
-        transform: translateX(100%);
+        transform: translateX(110%);
+        transition: transform 0.5s ease-out;
+
     }
     section { 
         padding: 1rem;
+    }
+    .slideshow-container-ns {
+        border-style: none;
+        border-radius: unset;
+    }
+    .burger-nav-active {
+        transform: translateX(0%);
+        transition: transform 0.5s ease-in;
     }
 }
 @media screen and (max-width: 450px) {
@@ -580,97 +679,14 @@ section {
         align-items: center;
         justify-content: space-around;
         transform: translateX(100%);
+        transition: transform 0.5s ease-out;
+
+    }
+    .burger-nav-active {
+        transform: translateX(0%);
+        transition: transform 0.5s ease-in;
     }
 }
-
-.burger-nav-active {
-    transform: translateX(0%);
-    transition: transform 0.5s ease-in;
-}
-
-
-.mySlides {display: none}
-
-.slideshow-container {
-  width: 100%;
-  height: 400px;
-  background-color: #ff4136;
-  position: relative;
-  margin-top: 2rem;
-  border-radius: 40%;
-  box-shadow: 0 0 20px 10px #e7040f;
-}
-
-.prev, .next, .pause {
-  position: absolute;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-.prev {
-    left: 0;
-    top: 50%;
-}
-.next {
-  right: 0;
-  top: 50%;
-  border-radius: 3px 0 0 3px;
-}
-.pause {
-    bottom: 0;
-    border-radius: 3px 3px 0 0;
-}
-
-.prev:hover, .next:hover, .pause:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@media only screen and (max-width: 300px) {
-  .prev, .next {font-size: 11px}
-}
-
-
-
 
 
 
