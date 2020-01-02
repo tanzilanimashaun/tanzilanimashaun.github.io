@@ -349,7 +349,7 @@ section {
     background-position: center center;
     text-shadow: 2px 2px 0px black;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat 0 0 fixed;
     background-image: url(/images/bgImage.jpg);
     background-color: rgba(255, 64, 54, 0.7);
     background-blend-mode: multiply;
@@ -433,6 +433,8 @@ section {
 
 .burger {
     display: none;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 .burger div {
     width: 30px;
@@ -441,7 +443,7 @@ section {
     margin: 6px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 770px) {
     .w-5-ns {
         width: 5%;
     }
@@ -533,8 +535,8 @@ section {
         left: 0;
         right: 0;
         width: 100%;
-        margin: 0;
-        z-index: 101;
+        margin: auto;
+        z-index: 100
     }
     .burger {
         display: block;
@@ -546,8 +548,7 @@ section {
         margin: 0;
         right: 0;
         left: 0;
-        height: 80vh;
-        width: 100vw;
+
         top: 109px;
         align-items: center;
         justify-content: space-around;
@@ -555,6 +556,10 @@ section {
     }
     section { 
         padding: 1rem;
+    }
+    .questions-ns {
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 }
 @media screen and (max-width: 450px) {
