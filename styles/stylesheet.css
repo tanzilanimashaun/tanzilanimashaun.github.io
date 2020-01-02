@@ -428,6 +428,9 @@ section {
 .accounts:hover {
     color: #e7040f;
 }
+.accounts-footer:hover {
+    color: #000000bb;
+}
 .accounts-container div a img {
     width: 8rem;
 }
@@ -443,8 +446,12 @@ section {
     background-color: rgb(255, 255, 255);
     margin: 6px;
 }
-
-
+footer {
+    height: 111px;
+    background-color: #e7040f;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 .mySlides {
     display: none;
     margin: 2rem;
