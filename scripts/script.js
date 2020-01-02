@@ -14,16 +14,39 @@ window.onscroll = function() {myFunction()};
             }
         }
 
-const questionAnswer = () => {
+const navDrop = () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.burger-nav');
+
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('burger-nav-active');
+    }
+    
+    )
+    nav.addEventListener('click', () => {
+      nav.classList.toggle('burger-nav-active');
+  }
+  
+  )
+
+}
+
+navDrop();
+
+
+        const questionAnswer = () => {
     const Q1 = document.querySelector('.q1');
     const q1 = document.querySelector('.q-1');
     const a1 = document.querySelector('.a-1');
+
     const Q2 = document.querySelector('.q2');
     const q2 = document.querySelector('.q-2');
     const a2 = document.querySelector('.a-2');
+
     const Q3 = document.querySelector('.q3');
     const q3 = document.querySelector('.q-3');
     const a3 = document.querySelector('.a-3');
+
     const Q4 = document.querySelector('.q4');
     const q4 = document.querySelector('.q-4');
     const a4 = document.querySelector('.a-4');
