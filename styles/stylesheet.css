@@ -529,6 +529,9 @@ section {
     .flex-column-ns {
         flex-direction: column;
     }
+    .items-center-ns {
+        align-items: center;
+    }
     .sticky-ns {
         position: fixed;
         top: 0;
@@ -556,10 +559,6 @@ section {
     }
     section { 
         padding: 1rem;
-    }
-    .questions-ns {
-        margin-left: 1rem;
-        margin-right: 1rem;
     }
 }
 @media screen and (max-width: 450px) {
