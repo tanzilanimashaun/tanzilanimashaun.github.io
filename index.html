@@ -2,13 +2,15 @@
 <html lang="en">
 
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<link rel="stylesheet" href="/styles/stylesheet.css">
 	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
 	<title>Tanzil's Code Camp</title>
 </head>
 
 <body class="w-100">
-	<header class="w-90">
+	<header id="mainNav" class="w-90">
 		<div class="main-nav-container">
 			<nav class="flex justify-between items-center">
 				<a href="https://www.freecodecamp.org/tanzil" class="link flex logo" title="Free Code Camp">
@@ -23,12 +25,12 @@
 				<div class="flex nav-container"> 
 					<a href="../" class="link"> Home </a>  
 					<a href="#about" class="link"> About </a>
-					<a href="#gallery" class="link"> Gallery </a>
+					<a href="#quotes" class="link"> Quotes </a>
 					<a href="#contact" class="link"> Contact </a> 
 				</div>
 			</nav>
 		</div>
-		<div class="w-100 flex items-center justify-between accounts-container">
+		<div id="accountNav" class="w-100 flex items-center justify-between accounts-container">
 			<div>
 				<a class="accounts" href="mailto:tanzil.animashaun@gmail.com" target="_blank" title="Email">
 					<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
@@ -55,7 +57,7 @@
 		<h1 class="quote">“Programs must be written for people to read, and only incidentally for machines to execute.”<br><br><em>Harold Abelson</em></h1>
 	</div>
 	<main class="w-100">
-		<section class="w-100">
+		<section id="about" class="w-100">
 			<h1>About Me</h1>
 			<img src="/images/profilePicture.jpg" class="profile-picture">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae turpis nec orci placerat semper. Proin congue, urna euismod dapibus sodales, erat purus bibendum velit, vel vulputate enim orci non metus. Nullam pharetra, lectus a pulvinar fermentum, lacus felis lacinia mi, vel auctor enim dolor vel nulla. Aenean mattis accumsan aliquet. Vivamus eget tellus massa. Mauris efficitur dolor sem, in mattis dui sodales quis. Nunc consequat, mauris in dignissim placerat, ipsum orci tincidunt urna, ac ornare lorem justo vitae nisl. Maecenas viverra ipsum id mauris ultrices, at dignissim lorem malesuada. Integer molestie aliquet quam, non tristique purus congue id. Aenean scelerisque lorem ultricies quam feugiat, a dictum est ullamcorper.</p>
@@ -97,6 +99,45 @@
 					</div>
 				</div>
 		</div>
+		<hr>
+		<section id="quotes" class="w-100">
+					<div>
+						<div class="flex items-center justify-center slideshow-container">
+							<div class="mySlides fade">
+								<h1 class="quote">“There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.”<br><br><em>Albert Einstein</em></h1>
+							</div>
+							<div class="mySlides fade ">
+								<h1 class="quote">“Things will be OK in the end. If it's not OK, it's not the end.”<br><br><em>Bob Marley</em></h1>
+								</div>
+							<div class="mySlides fade ">
+								<h1 class="quote">“Responsibility simply means your ability to respond.”<br><br><em>Jaggi Vasudev</em></h1>
+							</div>
+							<div class="mySlides fade ">
+								<h1 class="quote">“Life is like riding a bicycle. To keep your balance, you must keep moving.”<br><br><em>Albert Einstein</em></h1>
+							</div>
+							<div class="mySlides fade ">
+								<h1 class="quote">“Give a man a fire and he's warm for a day, but set fire to him and he's warm for the rest of his life.”<br><br><em>Terry Pratchett</em></h1>
+							</div>
+							<div class="mySlides fade">
+								<h1 class="quote">“When pain, misery, or anger happen, it is time to look within you, not around you.”<br><br><em>Jaggi Vasudev</em></h1>
+							</div>
+							
+							<a class="prev " onclick="plusSlides(-1) ">&#10094;</a>
+							<a class="next " onclick="plusSlides(1) ">&#10095;</a>
+							<a class="pause" onclick="pausePlaySlideshow()">&#10074;&#10074;</a>
+							
+						</div>
+						<br>	
+						<div style="text-align:center ">
+							  <span class="dot " onclick="currentSlide(1) "></span> 
+							  <span class="dot " onclick="currentSlide(2) "></span> 
+							  <span class="dot " onclick="currentSlide(3) "></span>
+							  <span class="dot " onclick="currentSlide(4) "></span>
+							  <span class="dot " onclick="currentSlide(5) "></span>
+							  <span class="dot " onclick="currentSlide(6) "></span>  
+                        </div>
+                    </div>
+		</section>
 		<hr>
 		<section class="w-100">
 					<div>
