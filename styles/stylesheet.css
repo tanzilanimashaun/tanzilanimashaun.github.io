@@ -430,6 +430,22 @@ section {
     width: 8rem;
 }
 
+@media screen and (max-width: 420px) {
+    .dn-ns {
+        display: none;
+    }
+    .sticky-ns {
+        position: fixed;
+        border-style: none;
+        border-bottom: solid;
+        border-width: 0.25rem;
+        top: 0;
+        width: 100%;
+        margin: 0;
+        z-index: 101;
+    }
+}
+
 .mySlides {display: none}
 
 .slideshow-container {
