@@ -1,4 +1,5 @@
-window.onscroll = function() {myFunction()};
+
+        window.onscroll = function() {myFunction()};
 
         var header = document.getElementById("mainNav");
         var accounts = document.getElementById("accountNav"); 
@@ -85,4 +86,22 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
+}
+
+var timer = setInterval(plusSlides,7000, 1);
+var pauseButton = document.querySelector(".pause");
+var playing = true;
+
+function pausePlaySlideshow(){
+    if (playing) {
+	pauseButton.innerHTML = '&#9658';
+	playing = false;
+    clearInterval(timer);
+    }
+    else {
+        pauseButton.innerHTML = '&#10074;&#10074;';
+        playing = true;
+        timer =
+        setInterval(plusSlides,7000, 1);
+    }
 }
