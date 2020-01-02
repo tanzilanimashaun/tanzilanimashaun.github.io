@@ -33,7 +33,7 @@ img {
     transition: color .15s ease-in
 }
 
-/* Viewport width classification */
+/* width classification */
 
 .w-5 {
     width: 5%;
@@ -376,6 +376,7 @@ section {
     border: 0.2px solid black;
 
 }
+
 .question-red {
     background-color: #ff4136;
     box-shadow: 0 0 4px 1px black;
@@ -430,21 +431,159 @@ section {
     width: 8rem;
 }
 
-@media screen and (max-width: 420px) {
+.burger {
+    display: none;
+}
+.burger div {
+    width: 30px;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px;
+}
+
+@media screen and (max-width: 600px) {
+    .w-5-ns {
+        width: 5%;
+    }
+    
+    .w-10-ns {
+        width: 10%;
+    }
+    
+    .w-15-ns {
+        width: 15%;
+    }
+    
+    .w-20-ns {
+        width: 20%;
+    }
+    
+    .w-25-ns {
+        width: 25%;
+    }
+    
+    .w-30-ns {
+        width: 30%;
+    }
+    
+    .w-35-ns {
+        width: 35%;
+    }
+    
+    .w-40-ns {
+        width: 40%;
+    }
+    
+    .w-45-ns {
+        width: 45%;
+    }
+    
+    .w-50-ns {
+        width: 50%;
+    }
+    
+    .w-55-ns {
+        width: 55%;
+    }
+    
+    .w-60-ns {
+        width: 60%;
+    }
+    
+    .w-65-ns {
+        width: 65%;
+    }
+    
+    .w-70-ns {
+        width: 70%;
+    }
+    
+    .w-75-ns {
+        width: 75%;
+    }
+    
+    .w-80-ns {
+        width: 80%;
+    }
+    
+    .w-85-ns {
+        width: 85%;
+    }
+    
+    .w-90-ns {
+        width: 90%;
+    }
+    
+    .w-95-ns {
+        width: 95%;
+    }
+    
+    .w-100-ns {
+        width: 100%;
+    }
     .dn-ns {
         display: none;
     }
+    .flex-column-ns {
+        flex-direction: column;
+    }
     .sticky-ns {
         position: fixed;
-        border-style: none;
-        border-bottom: solid;
-        border-width: 0.25rem;
         top: 0;
+        left: 0;
+        right: 0;
         width: 100%;
         margin: 0;
         z-index: 101;
     }
+    .burger {
+        display: block;
+    }
+    .burger-nav {
+        position: absolute;
+        display: flex;
+        background-color: #ff4136;
+        margin: 0;
+        right: 0;
+        left: 0;
+        height: 80vh;
+        width: 100vw;
+        top: 109px;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+    }
+    section { 
+        padding: 1rem;
+    }
 }
+@media screen and (max-width: 450px) {
+    .profile-picture-ns {
+        width: 100%;
+        border-radius: 5%;
+    }
+    .burger-nav {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: #ff4136;
+        margin: 0;
+        right: 0;
+        left: 0;
+        height: 80vh;
+        width: 100vw;
+        top: 109px;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+    }
+}
+
+.burger-nav-active {
+    transform: translateX(0%);
+    transition: transform 0.5s ease-in;
+}
+
 
 .mySlides {display: none}
 
